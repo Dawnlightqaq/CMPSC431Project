@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Course Management</title>
+</head>
+<body>
+<h1>Course Management</h1>
+
+<form action="/Employee/getAllCourse" method="get">
+  <button type="submit">Get All Course</button>
+</form>
+
+<h2>Add Course</h2>
+<form action="/Employee/AddCourse" method="post">
+  <input type="text" name="Course_name" placeholder="Course Name" required>
+  <input type="number" name="Year" placeholder="Year" required>
+  <select id="Season" name="Season" required>
+    <option value="SP">Spring</option>
+    <option value="SU">Summer</option>
+    <option value="FA">Fall</option>
+    <option value="WI">Winter</option>
+  </select>
+  <button type="submit">Add Course</button>
+</form>
+
+
+<h2>Delete Course</h2>
+<form action="/Employee/deleteCourse" method="post">
+  <input type="text" name="Course_name" placeholder="Course Name" required>
+  <input type="number" name="Year" placeholder="Year" required>
+  <select id="Season2" name="Season" required>
+    <option value="SP">Spring</option>
+    <option value="SU">Summer</option>
+    <option value="FA">Fall</option>
+    <option value="WI">Winter</option>
+  </select>
+  <button type="submit">Delete Course</button>
+</form>
+
+<h2>Find User in Course</h2>
+<form action="/Employee/ViewCourseUser" method="post">
+  <input type="text" name="Course_name" placeholder="Course Name" required>
+  <input type="number" name="Year" placeholder="Year" required>
+  <select id="Season3" name="Season" required>
+    <option value="SP">Spring</option>
+    <option value="SU">Summer</option>
+    <option value="FA">Fall</option>
+    <option value="WI">Winter</option>
+  </select>
+  <button type="submit">User List</button>
+</form>
+<h2>Coach and Course Table</h2>
+<form action="/Employee/getCourseAndCoachTable" method="get">
+  <button type="submit">Get Records</button>
+</form>
+</body>
+</html>

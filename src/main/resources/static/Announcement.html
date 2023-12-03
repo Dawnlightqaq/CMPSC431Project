@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Announcement Management</title>
+</head>
+<body>
+<h1>Announcement Management</h1>
+
+
+<h2>Publish Announcement</h2>
+<form action="/Employee/announcement" method="post">
+  <input type="text" name="Title" placeholder="Title" required>
+  <textarea name="Content" placeholder="Content" required></textarea>
+  <button type="submit">Publish</button>
+</form>
+
+<h2>Update Announcement</h2>
+<form action="/Employee/updateannouncement" method="post">
+  <input type="text" name="Title" placeholder="Title" required>
+  <textarea name="Content" placeholder="Content" required></textarea>
+  <input type="date" name="Date" placeholder="Date" required>
+  <button type="submit">Update</button>
+</form>
+
+<h2>Delete Announcement</h2>
+<form action="/Employee/deleteeannouncement" method="post">
+  <input type="text" name="Title" placeholder="Title" required>
+  <input type="date" name="Date" placeholder="Date" required>
+  <button type="submit">Delete</button>
+</form>
+<h2>All Announcements</h2>
+<form action="/user/getAllAnnounce" method="get">
+  <button type="submit">View All Announcements</button>
+</form>
+</body>
+</html>

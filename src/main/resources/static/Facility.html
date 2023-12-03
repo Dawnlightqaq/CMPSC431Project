@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Facility</title>
+</head>
+<body>
+<h2>Facility</h2>
+<form action="/user/getAllFacility" method="get">
+    <button type="submit">All Facility</button>
+</form>
+
+<form action="/user/CheckFacility" method="post">
+    <label for="FID">FID:</label>
+    <input type="number" id="FID" name="FID" required>
+    <button type="submit">Check In use status</button>
+</form>
+<h2>Borrow</h2>
+<form action="/user/borrow" method="post">
+    <label for="FID">FID:</label>
+    <input type="number" id="FID2" name="FID" required>
+    <button type="submit">Borrow</button>
+</form>
+
+<h2>Return</h2>
+<form action="/user/return" method="post">
+<label for="FID">FID:</label>
+<input type="number" id="FID3" name="FID" required>
+<button type="submit">Return</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Facility Management</title>
+</head>
+<body>
+<h1>Facility Management</h1>
+
+
+<h2>Add Facility</h2>
+<form action="/Employee/Addfacility" method="post">
+  <input type="text" name="Facility_name" placeholder="Facility Name" required>
+  <input type="text" name="Status" placeholder="Status" required>
+  <button type="submit">Add Facility</button>
+</form>
+
+
+<h2>Delete Facility</h2>
+<form action="/Employee/deleteFacility" method="post">
+  <input type="number" name="FID" placeholder="Facility ID" required>
+  <button type="submit">Delete Facility</button>
+</form>
+
+<h2>All Facility</h2>
+<form action="/Employee/getAllFacility" method="get">
+  <button type="submit">View All Facility</button>
+</form>
+
+<h2>Facility usage record</h2>
+<form action="/Employee/getUsageTable" method="get">
+  <button type="submit">View All records</button>
+</form>
+</body>
+</html>

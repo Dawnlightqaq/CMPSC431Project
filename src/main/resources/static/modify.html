@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>User Home</title>
+</head>
+<body>
+<h2>Update Your Profile</h2>
+<form action="/user/modify" method="post">
+  <label for="Email">Email:</label>
+  <input type="email" id="Email" name="Email" required>
+
+  <label for="Name">Name:</label>
+  <input type="text" id="Name" name="Name" required>
+
+  <label for="Birthday">Birthday:</label>
+  <input type="date" id="Birthday" name="Birthday" required>
+
+  <label for="Gender">Gender:</label>
+  <select id="Gender" name="Gender" required>
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+  </select>
+
+  <label for="Phone_number">Phone Number:</label>
+  <input type="number" id="Phone_number" name="Phone_number" required>
+
+
+  <button type="submit">Update Profile</button>
+</form>
+</body>
+</html>

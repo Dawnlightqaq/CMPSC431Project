@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Leave a Comment</title>
+</head>
+<body>
+<h2>Leave a Comment</h2>
+<form action="/user/comments" method="post">
+    <label for="Content">Comment:</label>
+    <textarea id="Content" name="Content" required></textarea>
+
+    <button type="submit">Submit</button>
+</form>
+
+<form action="/user/getComments" method="get">
+    <button type="submit">Get All Comments</button>
+</form>
+</body>
+</html>

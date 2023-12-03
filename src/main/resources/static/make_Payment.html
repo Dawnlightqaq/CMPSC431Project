@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>make_payment</title>
+</head>
+<body>
+<h2>Make Your Payment</h2>
+<form action="/user/makePayment" method="post">
+
+  <label for="Purpose">Purpose:</label>
+  <select id="Purpose" name="Purpose" required>
+    <option value="Membership">Membership</option>
+    <option value="Course">Course</option>
+  </select>
+
+  <label for="Amount">Amount:</label>
+  <input type="number" id="Amount" name="Amount" required>
+
+
+  <button type="submit">Pay</button>
+</form>
+</body>
+</html>

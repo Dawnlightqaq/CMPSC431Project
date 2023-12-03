@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Employee Management</title>
+</head>
+<body>
+<h1>Employee Management</h1>
+
+
+<h2>Add Employee</h2>
+<form action="/Employee/reg" method="post">
+  <input type="email" name="Email" placeholder="Email" required>
+  <input type="text" name="Name" placeholder="Name" required>
+  <input type="date" name="Birthday" placeholder="Birthday" required>
+  <input type="number" name="Phone_number" placeholder="Phone Number" required>
+  <button type="submit">Add</button>
+</form>
+
+
+<h2>Assign Coach to Course</h2>
+<form action="/Employee/AssignCToC" method="post">
+  <input type="number" name="Coach_EID" placeholder="Coach EID" required>
+  <input type="text" name="Course" placeholder="Course" required>
+  <select id="Season" name="Season" required>
+    <option value="SP">Spring</option>
+    <option value="SU">Summer</option>
+    <option value="FA">Fall</option>
+    <option value="WI">Winter</option>
+  </select>
+  <input type="number" name="Year" placeholder="Year" required>
+  <button type="submit">Assign</button>
+</form>
+
+<h2>Assign Coach</h2>
+<form action="/Employee/AssignCoach" method="post">
+  <input type="number" name="EID" placeholder="Employee ID" required>
+  <input type="text" name="Field" placeholder="Field" required>
+  <select id="Gender" name="Gender" required>
+    <option value="M">Male</option>
+    <option value="F">Female</option>
+  </select>
+  <button type="submit">Assign</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Courses</title>
+</head>
+<body>
+<h1>Courses</h1>
+<form action="/user/getAllCourse" method="get">
+    <button type="submit">Get All Course</button>
+</form>
+
+<form action="/user/getCourseByname" method="get">
+    <input type="text" id="Course_name" name="Course_name" required>
+    <button type="submit">Get Course by Name</button>
+</form>
+
+<form action="/user/getCourseByYearAndSeason" method="get">
+    <input type="text" id="Year" placeholder="Year" name="Year" required>
+    <select id="Season" name="Season" required>
+        <option value="SP">Spring</option>
+        <option value="SU">Summer</option>
+        <option value="FA">Fall</option>
+        <option value="WI">Winter</option>
+    </select>
+    <button type="submit">Get Course by Semester</button>
+</form>
+
+
+<form action="/Course_user.html" method="get">
+    <button type="submit">Course Management</button>
+</form>
+</body>
+</html>
